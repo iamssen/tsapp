@@ -1,0 +1,90 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "chalk/chalk.d.ts": {
+      "commit": "f4b1797c1201b6c575668f5d7ea12d9b1ab21846"
+    },
+    "node/node.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "webpack/webpack.d.ts": {
+      "commit": "f4b1797c1201b6c575668f5d7ea12d9b1ab21846"
+    },
+    "source-map/source-map.d.ts": {
+      "commit": "f4b1797c1201b6c575668f5d7ea12d9b1ab21846"
+    },
+    "uglify-js/uglify-js.d.ts": {
+      "commit": "f4b1797c1201b6c575668f5d7ea12d9b1ab21846"
+    },
+    "react/react.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "c2b4ebb74caeb379c3691646b04cb3db26b53f95"
+    },
+    "redux/redux.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react-redux/react-redux.d.ts": {
+      "commit": "c2b4ebb74caeb379c3691646b04cb3db26b53f95"
+    },
+    "react-router/react-router.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "redux-router/redux-router.d.ts": {
+      "commit": "c2b4ebb74caeb379c3691646b04cb3db26b53f95"
+    },
+    "react-router/history.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "redux-actions/redux-actions.d.ts": {
+      "commit": "c2b4ebb74caeb379c3691646b04cb3db26b53f95"
+    },
+    "history/history.d.ts": {
+      "commit": "c2b4ebb74caeb379c3691646b04cb3db26b53f95"
+    },
+    "redux-logger/redux-logger.d.ts": {
+      "commit": "12b6445d85d19a7f04f8550226ac118720520933"
+    },
+    "redux-thunk/redux-thunk.d.ts": {
+      "commit": "12b6445d85d19a7f04f8550226ac118720520933"
+    },
+    "es6-shim/es6-shim.d.ts": {
+      "commit": "d8b1685f2c580a33cabbc4b76d2de1edc28f3614"
+    },
+    "es6-promise/es6-promise.d.ts": {
+      "commit": "d8b1685f2c580a33cabbc4b76d2de1edc28f3614"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "d8b1685f2c580a33cabbc4b76d2de1edc28f3614"
+    },
+    "glob/glob.d.ts": {
+      "commit": "1a5b2a729d35b1d41e2d15818db013a3644c6ba4"
+    },
+    "minimatch/minimatch.d.ts": {
+      "commit": "1a5b2a729d35b1d41e2d15818db013a3644c6ba4"
+    },
+    "react-router-redux/react-router-redux.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "superagent/superagent.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "moment/moment.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "moment/moment-node.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "async/async.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "whatwg-fetch/whatwg-fetch.d.ts": {
+      "commit": "85af69c91599a6c904618545f0613970e1ff3f64"
+    }
+  }
+}
