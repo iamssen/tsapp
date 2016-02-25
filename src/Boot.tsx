@@ -6,7 +6,7 @@ import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import {Router, IndexRoute, Route, browserHistory} from 'react-router';
 
-import {App, Activities, Github, JsFiddle} from './Main/Components';
+import {App, Activities, Github, JsFiddle, XRoute} from './Main/Components';
 import {activities, githubRepositories, githubGists, jsFiddles} from './Main/Reducers';
 import {store, replaceReducers} from './Store';
 
@@ -25,7 +25,7 @@ render(
   <Provider store={store}>
     <Router history={browserHistory} onUpdate={onUpdateHook}>
       <Route path="/" component={App}>
-        <IndexRoute component={Activities}/>
+        <IndexRoute component={XRoute}/>
         <Route path="/github" component={Github}/>
         <Route path="/jsfiddle" component={JsFiddle}/>
       </Route>

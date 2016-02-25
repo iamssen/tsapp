@@ -1,0 +1,42 @@
+div.main-menu nav.navbar {
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+div.main-menu a {
+  font-weight: 300;
+}
+
+div.main-content {
+  margin-top: 60px;
+}
+
+div.main-content h1.content-activity {
+  font-weight: 200;
+}
+
+div.main-content div.content-activity h4 {
+  font-weight: 400;
+}
+
+div.main-content div.content-activity div.card-block {
+  padding: 0.8rem;
+}
+
+div.main-content div.content-activity div.card p.card-text {
+  line-height: 130%;
+}
+
+div.main-content div.content-activity div.card a.btn {
+  margin-left: 4px;
+}
+
+div.main-content div.content-activity div.card a.btn:first-child {
+  margin-left: 0;
+}
+
+
+
+div.responsive {
+  box-sizing: border-box;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+}

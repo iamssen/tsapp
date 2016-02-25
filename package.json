@@ -2,7 +2,7 @@
   "name": "application-name",
   "version": "0.0.1",
   "scripts": {
-    "serve": "live-server --open=dist --port=3004 --browser=\"$BROWSER\"",
+    "serve": "live-server --open=dist --watch=dist --port=3004",
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
     "build:prod": "webpack --config webpack.prod.config.js --progress --profile --colors --display-error-details --display-cached",
     "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
@@ -16,15 +16,13 @@
     "glob": "^7.0.0",
     "html-webpack-plugin": "latest",
     "imports-loader": "^0.6.5",
-    "node-sass": "^3.4.2",
     "raw-loader": "^0.5.1",
     "replacer-loader": "^0.1.0",
-    "sass-loader": "^3.1.2",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.0",
     "ts-loader": "latest",
     "typedoc": "latest",
-    "typescript": "^1.8.0",
+    "typescript": "^1.8.2",
     "webpack": "latest",
     "webpack-md5-hash": "latest"
   },
@@ -37,12 +35,12 @@
     "moment": "^2.11.2",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
     "react-router": "^1.0.3",
     "react-router-redux": "^3.0.0",
     "redux": "^3.3.1",
     "redux-logger": "^2.5.0",
     "redux-thunk": "^1.0.3",
-    "superagent": "^1.7.2",
     "whatwg-fetch": "^0.11.0"
   }
 }

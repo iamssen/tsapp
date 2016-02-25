@@ -7,6 +7,12 @@ import * as MainReducers from './Main/Reducers';
 
 // , createLogger()
 
+const logger = store => next => action => {
+  console.log('????',  action);
+  return next(action);
+}
+
+
 const store:Store = createStore(
   combineReducers(MainReducers), {},
   applyMiddleware(thunkMiddleware)

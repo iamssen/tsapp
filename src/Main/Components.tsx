@@ -6,7 +6,9 @@ import * as moment from 'moment';
 import {requestGithubRepositories, requestGithubGists, requestJsFiddle} from './Actions';
 import {Activity, Github, JsFiddle, Items} from '../Models';
 
-import './Style.scss';
+import {Responsive, ResponsiveTarget} from '../Common/Responsive';
+
+import './Style.css';
 
 class AppComponent extends React.Component<any, any> {
   render() {
@@ -42,8 +44,8 @@ class AppComponent extends React.Component<any, any> {
 }
 
 interface ActivitiesProps {
-  dispatch: Function;
-  activities: Items<Activity>;
+  dispatch?: Function;
+  activities?: Items<Activity>;
 }
 
 const ActivitiesLink = ({title, url, key}):JSX.Element => (
@@ -95,6 +97,29 @@ class ActivitiesComponent extends React.Component<ActivitiesProps, any> {
 
     return (
       <div>
+        <Responsive>
+          <ResponsiveTarget size={10000}>
+            <p>MAX</p>
+          </ResponsiveTarget>
+          <ResponsiveTarget size={1200}>
+            <p>render 1200</p>
+          </ResponsiveTarget>
+          <ResponsiveTarget size={1000}>
+            <p>render 1000</p>
+          </ResponsiveTarget>
+          <ResponsiveTarget size={800}>
+            <p>render 800</p>
+          </ResponsiveTarget>
+          <ResponsiveTarget size={600}>
+            <p>render 600</p>
+          </ResponsiveTarget>
+          <ResponsiveTarget size={400}>
+            <p>render 400</p>
+          </ResponsiveTarget>
+          <ResponsiveTarget size={200}>
+            <p>render 200</p>
+          </ResponsiveTarget>
+        </Responsive>
         <h1 className="content-activity">Activities</h1>
         <div className="content-activity card-columns">
           {items}
@@ -116,9 +141,9 @@ class ActivitiesComponent extends React.Component<ActivitiesProps, any> {
 }
 
 interface GithubProps {
-  dispatch: Function;
-  githubRepositories: Items<Github.Repository>;
-  githubGists: Items<Github.Gist>;
+  dispatch?: Function;
+  githubRepositories?: Items<Github.Repository>;
+  githubGists?: Items<Github.Gist>;
 }
 
 class GithubComponent extends React.Component<GithubProps, any> {
@@ -148,8 +173,8 @@ class GithubComponent extends React.Component<GithubProps, any> {
 }
 
 interface JsFiddleProps {
-  dispatch: Function;
-  jsFiddles: Items<JsFiddle.Fiddle>;
+  dispatch?: Function;
+  jsFiddles?: Items<JsFiddle.Fiddle>;
 }
 
 class JsFiddleComponent extends React.Component<JsFiddleProps, any> {
@@ -188,9 +213,22 @@ const ConnectedJsFiddle = connect(state => ({
   jsFiddles: state.jsFiddles
 }))(JsFiddleComponent);
 
+interface XRouteProps {
+  component: any;
+}
+
+class XRoute extends React.Component<XRouteProps, any> {
+  render() {
+    return (
+      <ConnectedActivities/>
+    )
+  }
+}
+
 export {
   ConnectedApp as App,
   ConnectedActivities as Activities,
   ConnectedGithub as Github,
-  ConnectedJsFiddle as JsFiddle
+  ConnectedJsFiddle as JsFiddle,
+  XRoute
 }
